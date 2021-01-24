@@ -1,0 +1,141 @@
+/************************************/
+/*        CUSTOM PROPRETIES         */
+/************************************/
+:root {
+  /*Colors*/
+  --color-text: black;
+  --color-blue: #0065fc;
+  --color-lightBlue: #deebff;
+  --color-lightGrey: #d3d0d0;
+  --color-background: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+a:active {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3% 1fr 3%;
+}
+
+/************************************/
+/*              HEADER              */
+/************************************/
+
+header {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column: 1 / -1;
+  align-items: center;
+}
+
+.logo,
+.signIn {
+  grid-row: 1;
+  padding: 1.3rem;
+  padding-bottom: 0;
+}
+
+.signIn {
+  font-weight: bold;
+  color: var(--color-blue);
+  text-align: end;
+}
+
+nav {
+  grid-column: span 2;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 1rem;
+  text-align: center;
+  width: 50%;
+  border-bottom: 3px solid var(--color-lightGrey);
+}
+
+.current {
+  border-bottom: 3px solid var(--color-blue);
+}
+
+.current a {
+  color: var(--color-blue);
+}
+
+@media (min-width: 769px) {
+  header {
+    grid-column: 2;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 15rem 10rem;
+  }
+
+  .logo,
+  .signIn {
+    padding: 0;
+  }
+
+  .signIn,
+  nav {
+    grid-row: 1;
+    margin-left: 1.7rem;
+  }
+
+  nav ul li {
+    padding: 2.5rem 0;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  .current {
+    border-bottom: none;
+    border-top: 1px solid var(--color-blue);
+  }
+}
+
+@media (min-width: 992px) {
+}
