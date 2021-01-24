@@ -44,10 +44,6 @@ h4 {
   font-weight: bold;
 }
 
-.subtitle {
-  font-size: 1.1rem;
-}
-
 p {
   margin: 0.5rem 0;
 }
@@ -107,6 +103,18 @@ nav ul li {
   color: var(--color-blue);
 }
 
+/***********************/
+/*        TITLE        */
+/***********************/
+
+.title__container {
+  grid-column: 2;
+  margin-top: 2rem;
+}
+.subtitle {
+  font-size: 1.1rem;
+}
+
 @media (min-width: 769px) {
   header {
     grid-column: 2;
@@ -138,4 +146,5 @@ nav ul li {
 }
 
 @media (min-width: 992px) {
+
 }
