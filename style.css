@@ -8,6 +8,9 @@
   --color-lightBlue: #deebff;
   --color-lightGrey: #d3d0d0;
   --color-background: #fff;
+
+  /*Spacing*/
+  --margin-body: 3%;
 }
 
 html,
@@ -50,7 +53,7 @@ p {
 
 .container {
   display: grid;
-  grid-template-columns: 3% 1fr 3%;
+  grid-template-columns: var(--margin-body) 1fr var(--margin-body);
 }
 
 /************************************/
@@ -115,6 +118,55 @@ nav ul li {
   font-size: 1.1rem;
 }
 
+/***********************/
+/*      SEARCHBAR      */
+/***********************/
+
+.searchBar__container {
+  grid-column: 2;
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.searchBar__container .map{
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-lightGrey);
+  border-radius: 15px 0 0 15px;
+}
+
+.searchBar__input {
+  height: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 0 15px 15px 0;
+  padding: 25px;
+  margin: 0;
+  outline: none;
+  width: 100%;
+}
+
+.searchBar__submit-text{
+  display: none;
+}
+
+.searchBar__submit-icon {
+  background-color: var(--color-blue);
+  color: white;
+  border: 1px solid var(--color-blue);
+  border-radius: 15px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  position: absolute;
+  right: var(--margin-body);
+}
+
 @media (min-width: 769px) {
   header {
     grid-column: 2;
@@ -143,8 +195,32 @@ nav ul li {
     border-bottom: none;
     border-top: 1px solid var(--color-blue);
   }
+
+  .searchBar__input {
+    width: 18rem;
+    border-radius: 0;
+  }
+
+  .searchBar__submit-text {
+    display: inline-block;
+    background-color: var(--color-blue);
+    color: white;
+    border: 1px solid var(--color-blue);
+    border-radius: 0 15px 15px 0;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+  }
+  .searchBar__submit-icon {
+    display: none;
+  }
+  .searchBar__submit-icon i {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) {
-
+  
 }
