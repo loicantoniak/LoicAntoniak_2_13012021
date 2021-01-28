@@ -433,6 +433,27 @@ aside {
   padding: 1rem;
 }
 
+/************************************/
+/*              FOOTER              */
+/************************************/
+
+.footer__container {
+  grid-column: 1/-1;
+  background-color: var(--color-lightGrey);
+  padding: 2rem 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__section ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__section li {
+  padding-bottom: 1rem;
+}
+
 @media (min-width: 769px) {
   .searchBar__input {
     width: 18rem;
@@ -487,6 +508,17 @@ aside {
     border-bottom: none;
     border-top: 1px solid var(--color-blue);
   }
+
+  .footer__container {
+    flex-direction: row;
+  }
+
+  .footer__section {
+    width: 33%;
+  }
+  
+
+
 }
 
 @media (min-width: 1090px) {
@@ -542,7 +574,4 @@ aside {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 215px);
   }
-  
-
-  
 }
