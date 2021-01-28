@@ -219,6 +219,26 @@ nav ul li {
   padding: 6px 9px;
 }
 
+/***********************/
+/*         INFO        */
+/***********************/
+
+.info__container {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.info__container i {
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 50%;
+  padding: 6px 10px;
+  margin-right: 0.8rem;
+  color: var(--color-blue);
+  font-size: 0.7rem;
+}
+
 @media (min-width: 769px) {
   .searchBar__input {
     width: 18rem;
