@@ -128,7 +128,7 @@ nav ul li {
   margin-top: 1.5rem;
 }
 
-.searchBar__container .map{
+.searchBar__container .map {
   display: flex;
   align-items: center;
   padding: 0.5rem 1rem;
@@ -148,7 +148,7 @@ nav ul li {
   width: 100%;
 }
 
-.searchBar__submit-text{
+.searchBar__submit-text {
   display: none;
 }
 
@@ -167,7 +167,85 @@ nav ul li {
   right: var(--margin-body);
 }
 
+/***********************/
+/*       FILTER        */
+/***********************/
+
+.filter__container {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.filter__container p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.filter__button__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter__button {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 25px;
+  padding: 0;
+  margin: 1rem 1rem 0 0;
+  padding-right: 1rem;
+  height: 3.4rem;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.icon__button {
+  border-radius: 50%;
+  position: relative;
+  background-color: var(--color-lightBlue);
+  margin-right: 0.5rem;
+  left: -5px;
+  padding: 11px 9px;
+}
+
+.filter__button i {
+  color: var(--color-blue);
+  padding: 6px 9px;
+}
+
 @media (min-width: 769px) {
+  .searchBar__input {
+    width: 18rem;
+    border-radius: 0;
+  }
+
+  .searchBar__submit-text {
+    display: inline-block;
+    background-color: var(--color-blue);
+    color: white;
+    border: 1px solid var(--color-blue);
+    border-radius: 0 15px 15px 0;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+  }
+  .searchBar__submit-icon {
+    display: none;
+  }
+  .searchBar__submit-icon i {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
   header {
     grid-column: 2;
     grid-template-rows: 1fr;
@@ -195,32 +273,16 @@ nav ul li {
     border-bottom: none;
     border-top: 1px solid var(--color-blue);
   }
-
-  .searchBar__input {
-    width: 18rem;
-    border-radius: 0;
-  }
-
-  .searchBar__submit-text {
-    display: inline-block;
-    background-color: var(--color-blue);
-    color: white;
-    border: 1px solid var(--color-blue);
-    border-radius: 0 15px 15px 0;
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    outline: none;
-    cursor: pointer;
-  }
-  .searchBar__submit-icon {
-    display: none;
-  }
-  .searchBar__submit-icon i {
-    display: none;
-  }
 }
 
-@media (min-width: 992px) {
-  
+@media (min-width: 1090px) {
+  .filter__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .filter__button {
+    margin-top: 0;
+  }
 }
