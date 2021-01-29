@@ -4,9 +4,9 @@
 :root {
   /*Colors*/
   --color-text: black;
-  --color-blue: #0065FC;
-  --color-lightBlue: #DEEBFF;
-  --color-lightGrey: #F2F2F2;
+  --color-blue: #0065fc;
+  --color-lightBlue: #deebff;
+  --color-lightGrey: #f2f2f2;
   --color-background: #fff;
 
   /*Spacing*/
@@ -94,11 +94,11 @@ nav ul li {
   border-bottom: 3px solid var(--color-lightGrey);
 }
 
-.current {
+nav ul li:hover {
   border-bottom: 3px solid var(--color-blue);
 }
 
-.current a {
+nav ul li:hover > a {
   color: var(--color-blue);
 }
 
@@ -136,12 +136,16 @@ nav ul li {
   height: 0.5rem;
   font-size: 1.3rem;
   font-weight: bold;
-  border: 1px solid var(--color-lightGrey);
+  border: 2px solid var(--color-lightGrey);
   border-radius: 0 15px 15px 0;
   padding: 25px;
   margin: 0;
   outline: none;
   width: 100%;
+}
+
+.searchBar__input:focus {
+  border: 2px solid var(--color-blue);
 }
 
 .searchBar__submit-text {
@@ -190,19 +194,22 @@ nav ul li {
   align-items: center;
   font-size: 1.3rem;
   font-weight: bold;
-  border: 1px solid var(--color-lightGrey);
-  border-radius: 25px;
+  border: 2px solid var(--color-lightGrey);
+  border-radius: 24px;
   padding: 0;
   margin: 1rem 1rem 0 0;
   padding-right: 1rem;
-  height: 3.4rem;
+  height: 3.5rem;
   background-color: white;
   outline: none;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
 .filter__button:hover {
-  
+  background-color: var(--color-lightBlue);
+  border: 2px solid var(--color-lightBlue);
 }
 
 .icon__button {
@@ -282,6 +289,10 @@ aside {
   font-weight: bold;
   font-size: 1.3rem;
 }
+
+.more:hover {
+  text-decoration: underline;
+}
 /****************************/
 /*    ACCOMODATIONS CARDS   */
 /****************************/
@@ -301,6 +312,11 @@ aside {
   border-radius: 15px;
   box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
   cursor: pointer;
+  transition: transform .2s;
+}
+
+.card:hover, .popular-card:hover {
+    transform: scale(1.05);
 }
 
 .card__image {
@@ -416,6 +432,11 @@ aside {
   border-radius: 15px;
   box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
   cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.activityCard:hover {
+  transform: scale(1.05);
 }
 
 .activityCard__image {
@@ -458,9 +479,13 @@ aside {
   padding-bottom: 1rem;
 }
 
+.footer__section li:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 769px) {
   .searchBar__input {
-    width: 18rem;
+    width: 26rem;
     border-radius: 0;
   }
 
@@ -508,10 +533,10 @@ aside {
     border-bottom: none;
   }
 
-  .current {
+  nav ul li:hover {
     border-bottom: none;
     border-top: 1px solid var(--color-blue);
-  }
+  }  
 
   .footer__container {
     flex-direction: row;
@@ -600,7 +625,7 @@ aside {
 
   .activities__container a:nth-child(6) {
     grid-column: 4;
-    grid-row: 7 /  12;
+    grid-row: 7 / 12;
   }
 
   .xlongCard {
