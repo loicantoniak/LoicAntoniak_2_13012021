@@ -4,9 +4,9 @@
 :root {
   /*Colors*/
   --color-text: black;
-  --color-blue: #0065fc;
-  --color-lightBlue: #deebff;
-  --color-lightGrey: #d3d0d0;
+  --color-blue: #0065FC;
+  --color-lightBlue: #DEEBFF;
+  --color-lightGrey: #F2F2F2;
   --color-background: #fff;
 
   /*Spacing*/
@@ -199,6 +199,10 @@ nav ul li {
   background-color: white;
   outline: none;
   cursor: pointer;
+}
+
+.filter__button:hover {
+  
 }
 
 .icon__button {
@@ -516,9 +520,6 @@ aside {
   .footer__section {
     width: 33%;
   }
-  
-
-
 }
 
 @media (min-width: 1090px) {
@@ -570,8 +571,47 @@ aside {
   }
 
   .activities__container {
-    grid-gap: 2rem;
+    display: grid;
+    grid-gap: 1.5rem;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 215px);
+    grid-template-rows: repeat(12, 25px);
+  }
+
+  .activities__container a:nth-child(1) {
+    grid-column: 1;
+  }
+
+  .activities__container a:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1 / 7;
+  }
+  .activities__container a:nth-child(3) {
+    grid-column: 2;
+    grid-row: 8 / 12;
+  }
+  .activities__container a:nth-child(4) {
+    grid-column: 3;
+  }
+
+  .activities__container a:nth-child(5) {
+    grid-column: 4;
+    grid-row: 1 / 6;
+  }
+
+  .activities__container a:nth-child(6) {
+    grid-column: 4;
+    grid-row: 7 /  12;
+  }
+
+  .xlongCard {
+    height: 30.5rem;
+  }
+
+  .longCard {
+    height: 15rem;
+  }
+
+  .mediumCard {
+    height: 12rem;
   }
 }

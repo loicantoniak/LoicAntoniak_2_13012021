@@ -31,7 +31,7 @@
         <nav>
           <ul>
             <li class="current"><a href="#accomodations">Hébergements</a></li>
-            <li><a href="#activity">Activités</a></li>
+            <li><a href="#activities">Activités</a></li>
           </ul>
         </nav>
         <!-- Sign In-->
@@ -45,7 +45,7 @@
       </div>
 
       <!-- SearchBar -->
-      <form action="" method="GET" class="searchBar__container">
+      <form action="/url" method="GET" class="searchBar__container">
         <i class="fas fa-map-marker-alt map"></i>
         <input
           class="searchBar__input"
@@ -62,27 +62,28 @@
       <!-- Filter -->
       <div class="filter__container">
         <p>Filtres</p>
+
         <div class="filter__button__container">
-          <button class="filter__button">
+          <div class="filter__button">
             <div class="icon__button">
               <i class="fas fa-money-bill-wave"></i>
             </div>
             Économiques
-          </button>
-          <button class="filter__button">
+          </div>
+          <div class="filter__button">
             <div class="icon__button">
               <i class="fas fa-child"></i>
             </div>
             Familial
-          </button>
-          <button class="filter__button">
+          </div>
+          <div class="filter__button">
             <div class="icon__button"><i class="fas fa-heart"></i></div>
             Romantiques
-          </button>
-          <button class="filter__button">
+          </div>
+          <div class="filter__button">
             <div class="icon__button"><i class="fas fa-dog"></i></div>
             Animaux autorisés
-          </button>
+          </div>
         </div>
       </div>
 
@@ -255,7 +256,7 @@
                 </div>
                 <div class="popular-card__body">
                   <h3>Hôtel Le Soleil du matin</h3>
-                 
+
                   <p class="popular-card__price">Nuit à partir de 128 €</p>
                   <div class="footer_card">
                     <div class="card__star">
@@ -316,6 +317,7 @@
               </a>
             </div>
           </div>
+        </aside>
       </section>
       <!-- Section -->
       <section id="activities">
@@ -324,7 +326,7 @@
           <!-- Card -->
           <a href="#">
             <div class="activityCard">
-              <div class="activityCard__image">
+              <div class="activityCard__image xlongCard">
                 <img
                   src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                   alt="Photo d'activité : Vieux port"
@@ -338,7 +340,7 @@
           <!-- Card -->
           <a href="#">
             <div class="activityCard">
-              <div class="activityCard__image largeCard">
+              <div class="activityCard__image longCard">
                 <img
                   src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                   alt="Photo d'activité : Fort de Pomègues"
@@ -352,7 +354,7 @@
           <!-- Card -->
           <a href="#">
             <div class="activityCard">
-              <div class="activityCard__image smallCard">
+              <div class="activityCard__image">
                 <img
                   src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                   alt="Photo d'activité : Iles de Frioul"
@@ -364,9 +366,9 @@
             </div>
           </a>
           <!-- Card -->
-          <a href="#">
+          <a href="#"">
             <div class="activityCard">
-              <div class="activityCard__image">
+              <div class="activityCard__image xlongCard">
                 <img
                   src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                   alt="Photo d'activité : Parc National des Calanques"
@@ -409,33 +411,33 @@
       </section>
 
       <!-- Footer -->
-    <footer class="footer__container">
-      <!-- FooterColumn -->
-      <div class="footer__section">
-        <h4>A propos</h4>
-        <ul>
-          <li><a href="#">Fonctionnement du site</a></li>
-          <li><a href="#">Conditions générales de vente</a></li>
-          <li><a href="#">Données et confidentialité</a></li>
-        </ul>
-      </div>
-       <!-- FooterColumn -->
-      <div class="footer__section">
-        <h4>Nos hébergements</h4>
-        <ul>
-          <li><a href="#">Charte qualité</a></li>
-          <li><a href="#">Soumettre votre hôtel</a></li>
-        </ul>
-      </div>
-       <!-- FooterColumn -->
-      <div class="footer__section">
-        <h4>Assistance</h4>
-        <ul>
-          <li><a href="#">Centre d'aide</a></li>
-          <li><a href="#">Nous contacter</a></li>
-        </ul>
-      </div>
-    </footer>
+      <footer class="footer__container">
+        <!-- FooterColumn -->
+        <div class="footer__section">
+          <h4>A propos</h4>
+          <ul>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales de vente</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+          </ul>
+        </div>
+        <!-- FooterColumn -->
+        <div class="footer__section">
+          <h4>Nos hébergements</h4>
+          <ul>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Soumettre votre hôtel</a></li>
+          </ul>
+        </div>
+        <!-- FooterColumn -->
+        <div class="footer__section">
+          <h4>Assistance</h4>
+          <ul>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
