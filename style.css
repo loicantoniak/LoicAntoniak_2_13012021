@@ -305,18 +305,18 @@ aside {
   margin-bottom: 2rem;
 }
 
-.card,
-.popular-card {
+.card {
   border: 5px solid white;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
   cursor: pointer;
-  transition: transform .2s;
+  transition: transform 0.2s;
+  max-width: 30rem;
 }
 
-.card:hover, .popular-card:hover {
-    transform: scale(1.05);
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card__image {
@@ -536,7 +536,7 @@ aside {
   nav ul li:hover {
     border-bottom: none;
     border-top: 1px solid var(--color-blue);
-  }  
+  }
 
   .footer__container {
     flex-direction: row;
