@@ -312,7 +312,6 @@ aside {
   box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75);
   cursor: pointer;
   transition: transform 0.2s;
-  max-width: 30rem;
 }
 
 .card:hover {
@@ -528,13 +527,14 @@ aside {
   }
 
   nav ul li {
-    padding: 2.5rem 0;
+    padding: 40px 0;
     text-align: center;
     border-bottom: none;
   }
 
   nav ul li:hover {
     border-bottom: none;
+    padding-top: 39px;
     border-top: 1px solid var(--color-blue);
   }
 
