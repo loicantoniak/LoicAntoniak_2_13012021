@@ -14,11 +14,19 @@ Pour ce projet, je devais réaliser un prototype en intégrant les maquettes en 
 
 Démo live : https://loicantoniak.github.io/LoicAntoniak_2_13012021/
 
+## Fabriqué avec
+
+* [VSCode](https://code.visualstudio.com/) - Editeur de textes
+
 ## Compétences évaluées
 
 -> Implémenter une interface responsive
 
 -> Intégrer du contenu conformément à une maquette
+
+## Auteur
+
+* **Loïc Antoniak** _alias_ [@loicantoniak](https://github.com/loicantoniak)
 
 ## Licence 
 
